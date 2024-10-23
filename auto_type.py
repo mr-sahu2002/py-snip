@@ -1,4 +1,3 @@
-
 from pynput.keyboard import Key, Controller
 import time
 
@@ -14,63 +13,28 @@ def auto(n):
 # code to auto type in your editor
 # ***For proper indentation comment your code inside the string.***
 n='''
-# # Python3 program for the above approachcodeiscontributedbym
-# from math import sqrt, floor, ceil
+# import os
 
-# # Function that returns True if N
-# # is a perfect square
-# def isPerfectSquare(N):
+# def file_system_operations() -> dict:
+#     current_directory = os.getcwd() 
+#     files_in_directory = os.listdir(current_directory)
 
-# 	floorSqrt = floor(sqrt(N))
-# 	return (N == floorSqrt * floorSqrt)
+#     # Use /tmp/ folder for creating 'new_folder' to avoid permission issues
+#     temp_directory = '/tmp/new_folder'
+#     if not os.path.exists(temp_directory):
+#         os.mkdir(temp_directory)
+#         msg = "new_folder created successfully in /tmp/."
+#     else:
+#         msg = "new_folder already exists in /tmp/."
 
-# # Function that returns True check if
-# # N is sum of three squares
-# def legendreFunction(N):
+#     result = {
+#         'current_directory': current_directory,
+#         'files_in_directory': files_in_directory,
+#         'confirmation_message': msg
+#     }
 
-# 	# Factor out the powers of 4
-# 	while (N % 4 == 0):
-# 		N //= 4
+#     return result
 
-# 	# N is NOT of the
-# 	# form 4^a * (8b + 7)
-# 	if (N % 8 != 7):
-# 		return True
-# 	else:
-# 		return False
-
-# # Function that finds the minimum
-# # number of square whose sum is N
-# def minSquares(N):
-
-# 	# If N is perfect square
-# 	if (isPerfectSquare(N)):
-# 		return 1
-
-# 	# If N is sum of 2 perfect squares
-# 	for i in range(N):
-# 		if i * i < N:
-# 			break
-# 		if (isPerfectSquare(N - i * i)):
-# 			return 2
-
-# 	# If N is sum of 3 perfect squares
-# 	if (legendreFunction(N)):
-# 		return 3
-	
-# 	# Otherwise, N is the
-# 	# sum of 4 perfect squares
-# 	return 4
-
-# # Driver code
-# if __name__ == '__main__':
-
-# 	# Given number
-# 	N = 123
-
-# 	# Function call
-# 	print(minSquares(N))
+# print(file_system_operations())
 '''
 auto(n) 
-
-
